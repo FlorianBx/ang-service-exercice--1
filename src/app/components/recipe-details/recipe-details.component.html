@@ -1,0 +1,9 @@
+<div class="text-center">
+  <h1>{{ recipe.name }}</h1>
+  <p>{{ recipe.description }}</p>
+  @for (ingredient of recipe.ingredients; track ingredient.id) {
+  <p>{{ ingredient.name }}</p>
+  <p>{{ ingredient.quantity }}</p>
+  <p>{{ ingredient.unit }}</p>
+  }
+</div>
