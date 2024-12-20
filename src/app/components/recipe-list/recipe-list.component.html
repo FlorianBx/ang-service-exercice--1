@@ -1,0 +1,11 @@
+@for (recipe of recipes; track recipe.id) {
+<div class="mt-48">
+  <p class="font-bold">{{ recipe.name }}</p>
+  <p>{{ recipe.description }}</p>
+  @for (ingredient of recipe.ingredients; track ingredient.id) {
+  <p>{{ ingredient.name }}</p>
+  <p>{{ ingredient.quantity }}</p>
+  <p>{{ ingredient.unit }}</p>
+  }
+</div>
+}
